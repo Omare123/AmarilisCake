@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Nesans Semi Bold';
+  src: url("./Nesans-Semi-Bold.ttf");
+  font-weight: 100;
+  font-style: normal; }
+
+body {
+  font-family: "Nesans Semi Bold";
+  margin: 0;
+  background-color: #E6E6E6; }
+  body header {
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    min-height: 15vh;
+    z-index: 1;
+    border-bottom: 1px solid #818181; }
+    body header .logo img {
+      width: 10vh;
+      height: 10vh; }
+  body main {
+    padding-top: 15vh;
+    min-height: 100vh;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  body .footer {
+    width: 100%;
+    background-color: #FEFEFE;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center; }
+    body .footer div {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+    body .footer .iconify {
+      max-width: 5vh;
+      max-height: 5vh;
+      min-height: 2vh;
+      min-width: 2vh;
+      color: black; }
+    body .footer .instagram {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100vh;
+      max-height: 50vh;
+      margin-bottom: 5rem; }
+
+.intro {
+  width: 80vw;
+  min-height: 30vh;
+  background-color: #818181;
+  background-size: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12vh; }
+  .intro__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FEFEFE; }
+    .intro__section__icon {
+      width: 5vw;
+      height: 5vh; }
+    .intro__section__text {
+      font-size: 1.5em;
+      text-align: center; }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  max-width: 100vw; }
+  .banner__icon {
+    transition: transform .2s;
+    width: 40vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .banner :hover {
+    transform: scale(1.1); }
+  .banner #iconOne {
+    background-image: url("../images/icono-1.jpg"); }
+  .banner #iconTwo {
+    background-image: url("../images/icono-2.jpg"); }
+  .banner #iconThree {
+    background-image: url("../images/icono-3.jpg"); }
+  .banner #iconFour {
+    background-image: url("../images/icono-4.jpg"); }
+
+.direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 75vh;
+  width: 70vw;
+  background-color: #818181;
+  border-radius: 5px; }
+  .direction__card--par {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    background-color: #FEFEFE;
+    border: 1px solid #272727;
+    border-radius: 5px; }
+    .direction__card--par__information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      border: none;
+      margin-right: 1em;
+      width: 70vw;
+      color: #272727;
+      text-align: center; }
+      .direction__card--par__information__instagram {
+        color: #272727; }
+    .direction__card--par__iframe {
+      border: 0px;
+      width: 30vw;
+      min-height: 10vh;
+      max-height: 30vh;
+      border-radius: 0 5px 5px 0; }
+    @media (max-width: 599px) {
+      .direction__card--par {
+        width: 100vw; }
+        .direction__card--par__iframe {
+          width: 50vw; } }
+  .direction__card--impar {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    background-color: #FEFEFE;
+    border: 1px solid #272727;
+    border-radius: 5px; }
+    .direction__card--impar__information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: none;
+      margin-left: 1em;
+      width: 70vw;
+      color: #272727; }
+      .direction__card--impar__information__instagram {
+        color: #272727; }
+    .direction__card--impar__iframe {
+      border: 0px;
+      width: 30vw;
+      min-height: 10vh;
+      max-height: 30vh;
+      border-radius: 5px 0 0 5px; }
+    @media (max-width: 599px) {
+      .direction__card--impar {
+        width: 100vw; }
+        .direction__card--impar__iframe {
+          width: 50vw; } }
+  @media (max-width: 599px) {
+    .direction {
+      margin-top: 5vh;
+      width: 100vw;
+      min-height: 100vh; } }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100vw; }
+  .section__title {
+    font-size: 2rem; }
+  .section__products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 5em; }
+    .section__products__card {
+      width: 20vw;
+      height: 20vw;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section__products__card__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0px 0px; }
+      .section__products__card__span {
+        text-align: center;
+        background-color: #FEFEFE;
+        width: 100%; }
+    @media (max-width: 599px) {
+      .section__products {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .section__products__card {
+          width: 80vw;
+          height: 80vw;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          background-color: #FEFEFE;
+          align-items: center;
+          margin-bottom: 5vh; }
+          .section__products__card__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 5px 0px 0px; }
+          .section__products__card__span {
+            align-self: center;
+            justify-self: center; } }
+  @media (max-width: 599px) {
+    .section {
+      margin-top: 5vh; } }
+
+form .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #818181; }
+  form .form-container input[type=text], form .form-container input[type=email], form .form-container select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; }
+  form .form-container input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+  form .form-container input[type=reset] {
+    width: 40%;
+    background-color: #FFCC00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+  form .form-container div {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 599px) {
+      form .form-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90vw; } }
+  form .form-container label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #E6E6E6; }
+
+.formCheckbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .about__us {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #272727;
+    border-radius: 5px;
+    margin-bottom: 5vh; }
+    .about__us__image {
+      background-image: url("../images/amarilis-big.jpg");
+      width: 80vw;
+      height: 35vh;
+      background-size: cover;
+      border-radius: 5px 0px 0px 5px;
+      background-position: center;
+      border: 1px solid #272727; }
+    .about__us__text {
+      margin: 0 2vw;
+      text-align: center;
+      color: #FEFEFE;
+      font-size: 1em; }
+    @media (max-width: 960px) {
+      .about__us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90vw;
+        margin-top: 2vh; }
+        .about__us__image {
+          border-radius: 5px 5px 0px 0px;
+          width: 100%;
+          border: 1px solid #272727; }
+        .about__us__text {
+          margin: 0 2vw;
+          text-align: center;
+          color: #FEFEFE;
+          font-size: 1em; } }
+  .about__table {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FEFEFE; }
+    .about__table__square {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .about__table__title {
+      color: #818181;
+      width: 5vw;
+      height: 5vh; }
+    .about__table__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 15vw;
+      height: 15vh; }
+    @media (max-width: 960px) {
+      .about__table {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .about__table__square {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+        .about__table__titles {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          background-color: lightblue;
+          width: 100%; }
+        .about__table__content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          width: 80vw;
+          height: 15vh; } }

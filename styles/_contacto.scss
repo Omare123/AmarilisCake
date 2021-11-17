@@ -1,0 +1,65 @@
+@import 'media';
+form .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    border-radius: $border-radius;
+    background-color: $grey;
+    input[type=text], input[type=email], select{
+        width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: $border-radius;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 40%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+    }
+    input[type=reset] {
+        width: 40%;
+        background-color: #FFCC00;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+    }
+    div{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include media-xs{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 90vw;
+        }
+    }
+    label{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+}
+ 
+.formCheckbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

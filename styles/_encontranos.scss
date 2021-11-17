@@ -1,0 +1,88 @@
+.direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 75vh;
+    width: 70vw;
+    background-color: $grey;
+    border-radius: $border-radius;
+    &__card{
+        &--par{
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: row;
+            width: 50vw;
+            background-color: $secondary-color;
+            border: 1px solid $black;
+            border-radius: $border-radius;
+            &__information{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                border: none;
+                margin-right: 1em;
+                width: 70vw;
+                color: $black;
+                text-align: center;
+                &__instagram{
+                    color: $black;
+                }
+            }
+            &__iframe{
+                border: 0px;
+                width: 30vw;
+                min-height: 10vh;
+                max-height: 30vh;
+                border-radius: 0 $border-radius $border-radius 0;
+            }
+            @include media-xs{
+                width: 100vw;
+                &__iframe{
+                    width: 50vw;
+                }
+            }
+        }
+        &--impar{
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: row;
+            width: 50vw;
+            background-color: $secondary-color;
+            border: 1px solid $black;
+            border-radius: $border-radius;
+            &__information{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: none;
+                margin-left: 1em;
+                width: 70vw;
+                color: $black;
+                &__instagram{
+                    color: $black;
+                }
+            }
+            &__iframe{
+                border: 0px;
+                width: 30vw;
+                min-height: 10vh;
+                max-height: 30vh;
+                border-radius: $border-radius 0 0 $border-radius;
+            }
+            @include media-xs{
+                width: 100vw;
+                &__iframe{
+                    width: 50vw;
+                }
+            }
+        }
+        
+    }
+    @include media-xs{
+        margin-top: 5vh;
+        width: 100vw;
+        min-height: 100vh;
+    }
+}

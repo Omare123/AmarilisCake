@@ -1,0 +1,50 @@
+$min-xxs: 320px;
+$min-xs: 375px;
+$min-wide-mobile: 450px;
+$min-sm: 600px;
+$min-md: 960px;
+$min-lg: 1280px;
+$min-xl: 1920px;
+
+@mixin media-xxs {
+    @media (max-width: $min-xs - 1) {
+      @content;
+    }
+  }
+  
+  @mixin media-xs {
+    @media (max-width: $min-sm - 1) {
+      @content;
+    }
+  }
+  
+  @mixin media-sm {
+    @media (min-width: $min-sm) and (max-width: $min-md - 1) {
+      @content;
+    }
+  }
+  
+  @mixin media-md {
+    @media (min-width: $min-md) and (max-width: $min-lg - 1) {
+      @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media (min-width: $min-lg) and (max-width: $min-xl - 1) {
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media (min-width: $min-xl) {
+      @content;
+    }
+  }
+
+  //Less than
+  @mixin media-lt-md{
+    @media (max-width: $min-md) {
+      @content;
+    }
+  }

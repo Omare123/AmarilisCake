@@ -1,0 +1,110 @@
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__us{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: $black;
+        border-radius: $border-radius;
+        margin-bottom: 5vh;
+        &__image{
+            background-image: url("../images/amarilis-big.jpg");
+            width: 80vw;
+            height: 35vh;
+            background-size:cover;
+            border-radius: $border-radius 0px 0px $border-radius;
+            background-position: center;
+            border: 1px solid $black;
+        }
+        &__text{
+            margin: 0 2vw;
+            text-align: center;
+            color: $secondary-color;
+            font-size: 1em;
+        }
+        @include media-lt-md{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90vw;
+            margin-top: 2vh;
+            &__image{
+                border-radius: $border-radius $border-radius 0px 0px;
+                width: 100%;
+                border: 1px solid $black;
+            }
+            &__text{
+                margin: 0 2vw;
+                text-align: center;
+                color: $secondary-color;
+                font-size: 1em;
+            }
+        }
+    }
+    &__table{
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5vh;
+        border-radius: $border-radius;
+        align-items: center;
+        flex-direction: row;
+        background-color: $secondary-color;
+        &__square{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__title{
+            color: $grey;
+            width: 5vw;
+            height: 5vh;
+        }
+        &__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 15vw;
+            height: 15vh;
+        }
+
+        @include media-lt-md{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &__square{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            &__titles{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                background-color: lightblue;
+                width: 100%;
+            }
+            &__content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                width: 80vw;
+                height: 15vh;
+            }
+        }
+    }
+}
