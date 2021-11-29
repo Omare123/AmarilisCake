@@ -3,12 +3,11 @@
 .intro{
         width: 80vw;
         min-height: 30vh;
-        background-color: $grey;
+        background-color: $black;
         background-size: 80%;
         display: flex;
         flex-direction: row; 
         align-items: center;
-        margin-top: 12vh;
         &__section{
             width: 100%;
             display: flex;
@@ -33,7 +32,7 @@
     justify-content:space-evenly; 
     align-items: center;
     height: 70vh;
-    max-width: 100vw;
+    max-width: 99vw;
     &__icon{
         transition: transform .2s;
         width: 40vw;
@@ -57,4 +56,184 @@
     #iconFour{
         background-image: url("../images/icono-4.jpg") ;
     }
+}
+
+.vegan{
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-around; 
+    align-items: center;
+    min-height: 70vh;
+    width: 100vw;
+    &__title{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+        font-size: 4vh;
+    }
+    &__supercard{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        border-radius: $border-radius;
+        background-color: $black;
+        width: 80vw;
+        height: 50vh;
+        margin-bottom: 5vh;
+        &__img{
+            max-height: 50vh;
+            // width: 45vw;
+            border-radius: $border-radius;
+        }
+        &__information{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 10vh;
+            height: 100%;
+            align-content: center;
+            color: $primary-color;
+            &__title{
+                font-size: 2em;
+            }
+        }
+        @include media-sm{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            align-items: center;
+            border-radius: $border-radius;
+            background-color: $black;
+            width: 90vw;
+            height: 50vh;
+            margin-bottom: 5vh;
+            &__img{
+                max-height: 50vh;
+                border-radius: $border-radius;
+            }
+            &__information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 2vw;
+                height: 100%;
+                align-content: center;
+                color: $primary-color;
+                &__title{
+                    font-size: 2em;
+                }
+            }
+        }
+        @include media-xs{ 
+            flex-direction: column;
+            min-height: 80vh;
+            width: 90vw;
+            &__img{
+                width: 100%;
+                border-radius: $border-radius;
+            }
+            &__information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+                padding: 5vh 0;
+                min-height: 10vh;
+                color: $primary-color;
+                &__title{
+                    font-size: 1.8em;
+                }
+                .iconify{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__divition{
+
+        display: flex; 
+        flex-direction: row; 
+        justify-content:space-evenly; 
+        align-items: center;
+        min-height: 50vh;
+        width: 100vw;
+        &__card{
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center;
+            border-radius: $border-radius;
+            background-color: $beige;
+            width: 30vw;
+            height: 50vh;
+            #veganOne{
+                background-image: url("../images/vegan-1.jpg") ;
+            }
+            #veganTwo{
+                background-image: url("../images/vegan-2.jpg") ;
+            }
+            #veganThree{
+                background-image: url("../images/vegan-3.jpg") ;
+            }
+            &__img{
+                height: 70vh;
+                width: 100%;
+                border-radius: $border-radius;
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+            &__information{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                color: $black;
+            }
+        }
+        @include media-xs{
+            display: flex; 
+            flex-direction: column; 
+            justify-content:space-evenly; 
+            align-items: center;
+            min-height: 50vh;
+            width: 100vw;
+            &__card{
+                margin-top: 3vh;
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid $beige;
+                border-radius: $border-radius;
+                background-color: $beige;
+                min-height: 40vh;
+                width: 90vw;
+                &__img{
+                    width: 100%;
+                    max-height: 100%;
+                    background-size:cover;
+                    border: 1px solid $beige;
+                    border-radius: $border-radius;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &__information{
+                    display: flex;
+                    min-width: 50%;
+                    margin-bottom: 2vh;
+                    min-height: 10vh;
+                    text-align: center;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    
 }

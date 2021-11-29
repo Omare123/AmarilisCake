@@ -14,7 +14,7 @@
         border-radius: $border-radius;
         margin-bottom: 5vh;
         &__image{
-            background-image: url("../images/amarilis-big.jpg");
+            background-image: url('https://www.linkpicture.com/q/amarilis-big.jpg');
             width: 80vw;
             height: 35vh;
             background-size:cover;
@@ -34,7 +34,7 @@
             align-items: center;
             flex-direction: column;
             width: 90vw;
-            margin-top: 2vh;
+            margin-top: 3vh;
             &__image{
                 border-radius: $border-radius $border-radius 0px 0px;
                 width: 100%;
@@ -51,7 +51,7 @@
     &__table{
         width: 80vw;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding-top: 5vh;
         border-radius: $border-radius;
         align-items: center;
@@ -64,13 +64,14 @@
             flex-direction: column;
         }
         &__title{
-            color: $grey;
+            color: $black;
             width: 5vw;
             height: 5vh;
         }
         &__content{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
+            text-align: center;
             align-items: center;
             flex-direction: row;
             width: 15vw;
