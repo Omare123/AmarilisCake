@@ -30,7 +30,7 @@ $min-xl: 1920px;
     }
   }
   
-  @mixin media-lg {
+  @mixin media-md {
     @media (min-width: $min-lg) and (max-width: $min-xl - 1) {
       @content;
     }
@@ -43,8 +43,19 @@ $min-xl: 1920px;
   }
 
   //Less than
+  @mixin media-lt-sm{
+    @media (max-width: $min-sm) {
+      @content;
+    }
+  }
   @mixin media-lt-md{
     @media (max-width: $min-md) {
+      @content;
+    }
+  }
+
+  @mixin media-lt-lg{
+    @media (max-width: $min-lg) {
       @content;
     }
   }

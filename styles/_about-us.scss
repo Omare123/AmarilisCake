@@ -10,7 +10,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        background-color: $black;
+        background-color: $blue;
+        border: 1px solid $secondary-color;
         border-radius: $border-radius;
         margin-bottom: 5vh;
         &__image{
@@ -20,15 +21,14 @@
             background-size:cover;
             border-radius: $border-radius 0px 0px $border-radius;
             background-position: center;
-            border: 1px solid $black;
         }
         &__text{
             margin: 0 2vw;
             text-align: center;
             color: $secondary-color;
-            font-size: 1em;
+            font-size: 1.2em;
         }
-        @include media-lt-md{
+        @include media-lt-lg{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,7 +38,7 @@
             &__image{
                 border-radius: $border-radius $border-radius 0px 0px;
                 width: 100%;
-                border: 1px solid $black;
+                border: 1px solid $secondary-color;
             }
             &__text{
                 margin: 0 2vw;
