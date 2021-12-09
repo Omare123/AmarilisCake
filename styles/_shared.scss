@@ -1,6 +1,5 @@
 body{
     font-family: $primary-font;
-    margin: 0;
     background-color: $primary-color;
     header{
         background-color: $secondary-color;
@@ -40,7 +39,12 @@ body{
         justify-content: center;
         align-items: center;
         align-self: center;
-        div {   margin-top: 5vh;
+        img{
+            width: 8vh;
+            height: 8vh;
+        }
+        div {
+            margin-top: 2vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -52,15 +56,7 @@ body{
             max-height: 5vh;
             min-height: 2vh;
             min-width: 2vh;
-            color: black;
-        }
-        .instagram{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 100vh;
-            max-height: 50vh;
-            margin-bottom: 5rem;
+            color: $black;
         }
     }
 }
