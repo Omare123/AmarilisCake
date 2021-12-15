@@ -176,18 +176,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     min-height: 50vh;
     width: 90vw; }
     .vegan__divition__card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
       border-radius: 5px;
       background-color: #6b969d;
       width: 20vw;
-      height: 45vh; }
+      min-height: 45vh; }
       .vegan__divition__card #veganOne {
         background-image: url("../images/vegan-1.jpg"); }
       .vegan__divition__card #veganTwo {
@@ -196,16 +195,19 @@ body {
         background-image: url("../images/vegan-3.jpg"); }
       .vegan__divition__card__img {
         height: 40vh;
-        width: 100%;
+        width: 20vw;
         border-radius: 5px 5px 0 0;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; }
       .vegan__divition__card__information {
-        min-height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 10vh;
         max-width: 90%;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.1em;
         color: #FEFEFE; }
       @media (max-width: 960px) {
         .vegan__divition__card {
@@ -318,6 +320,7 @@ body {
     width: 100%;
     margin-bottom: 5em; }
     .section__products__card {
+      transition: transform .4s;
       width: 20vw;
       height: 20vw;
       border-radius: 5px;
@@ -361,6 +364,8 @@ body {
         background-image: url("https://www.linkpicture.com/q/card11.jpg"); }
       .section__products__card #card-12 {
         background-image: url("https://www.linkpicture.com/q/card12.jpg"); }
+      .section__products__card:hover {
+        transform: translateY(-10px); }
     @media (max-width: 599px) {
       .section__products {
         width: 100%;
