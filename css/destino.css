@@ -312,7 +312,11 @@ body {
   text-transform: uppercase;
   width: 100vw; }
   .section__title {
-    font-size: 2rem; }
+    text-align: center;
+    font-size: 2rem;
+    background-color: #FEFEFE;
+    width: 100vw;
+    margin-bottom: 2vh; }
   .section__products {
     display: flex;
     flex-direction: row;

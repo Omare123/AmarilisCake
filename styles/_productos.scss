@@ -6,7 +6,11 @@
     text-transform: uppercase;
     width: 100vw;
     &__title{
+        text-align: center;
         font-size: 2rem;
+        background-color: $secondary-color;
+        width: 100vw;
+        margin-bottom: 2vh;
     }
     &__products{
         display: flex;
